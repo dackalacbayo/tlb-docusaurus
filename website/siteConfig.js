@@ -13,16 +13,16 @@ const users = [
   {
     caption: 'User1',
     // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/docusaurus.svg',
+    // if it is not '/', like: '/test-site/img/tlb-icon.ico'.
+    image: '/img/tlb-icon.ico',
     infoLink: 'https://www.facebook.com',
     pinned: true,
   },
 ];
 
 const siteConfig = {
-  title: 'Hugo', // Title for your website.
-  tagline: 'The world’s fastest framework for building websites',
+  title: 'TLB Docs', // Title for your website.
+  tagline: '',
   url: 'https://learnhugo.netlify.com', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -48,8 +48,8 @@ const siteConfig = {
   users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/docusaurus.svg',
-  footerIcon: 'img/docusaurus.svg',
+  headerIcon: 'img/tlb-icon.ico',
+  footerIcon: 'img/tlb-icon.ico',
   favicon: 'img/favicon.png',
 
   /* Colors for website */

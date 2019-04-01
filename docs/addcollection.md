@@ -122,3 +122,99 @@ In **```config.yml```**
 In **```netlify cms```**
 
 ![alt-text](/img/add-collection-6.jpg)
+
+## FAQs
+In **```config.yml```**
+```
+- name: "faq" # Used in routes, e.g., /admin/collections/blog
+    label: "FAQs" # Used in the UI
+    folder: "content/faq/list" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Id", name: "id", widget: "string"}
+      - {label: "Question", name: "title", widget: "string"}
+      - {label: "Answer", name: "body", widget: "markdown"}
+```
+In **```netlify cms```**
+
+![alt-text](/img/faq.jpg)
+
+## Franchise Packages photos
+In **```config.yml```**
+```
+- name: "franchise_packages" # Used in routes, e.g., /admin/collections/blog
+    label: "Franchise Packages" # Used in the UI
+    folder: "content/franchise packages/list" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Alt", name: "title", widget: "string"}
+      - {label: "Image", name: "thumbnail", widget: "image"}
+      - {label: "Type", name: "type", widget: "select", options: ["cart", "counter", "kiosk"]}
+      - {label: "Description", name: "desc", widget: "string"}
+```
+In **```netlify cms```**
+![alt-text](/img/franchise_packages.jpg)
+
+## Limited Flavor photos
+In **```config.yml```**
+```
+- name: "limited_flavors" # Used in routes, e.g., /admin/collections/blog
+    label: "Limited flavors" # Used in the UI
+    folder: "content/limited flavors/list" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Available", name: "available", widget: "select", options: ["yes", "no"]}
+      - {label: "Images", name: "images", widget: "list", fields:[{label: "Image", name: "image", widget: "image"}]}
+```
+In **```netlify cms```**
+![alt-text](/img/limited_flavor.jpg)
+
+## Franchise expo photos
+In **```config.yml```**
+```
+- name: "franchise_expos" # Used in routes, e.g., /admin/collections/blog
+  label: "Franchise Expos" # Used in the UI
+  folder: "content/franchise expos/list" # The path to the folder where the documents are stored
+  create: true # Allow users to create new documents in this collection
+  slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  fields: # The fields for each document, usually in front matter
+    - {label: "Image", name: "thumbnail", widget: "image"}
+    - {label: "Alt", name: "title", widget: "string"}
+```
+In **```netlify cms```**
+![alt-text](/img/franchise_expo.jpg)
+
+## kidsoftlb photos
+In **```config.yml```**
+```
+- name: "kidsoftlb" # Used in routes, e.g., /admin/collections/blog
+    label: "KidsofTheLostBread" # Used in the UI
+    folder: "content/kidsoftlb/list" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Image", name: "thumbnail", widget: "image"}
+      - {label: "Name", name: "title", widget: "string"}
+      - {label: "Accounts", name: "accounts", widget: "list", fields:[{label: "account", name: "account", widget: "string"}]}
+```
+In **```netlify cms```**
+![alt-text](/img/kidsoftlb.jpg)
+
+## Testimonial posts
+In **```config.yml```**
+```
+- name: "testimonials" # Used in routes, e.g., /admin/collections/blog
+    label: "Testimonials" # Used in the UI
+    folder: "content/testimonials/list" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Name", name: "title", widget: "string"}
+      - {label: "Testimonial", name: "review", widget: "string"}
+```
+In **```netlify cms```**
+![alt-text](/img/testimonial.jpg)

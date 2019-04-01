@@ -81,7 +81,7 @@ Navigate to your new site at **http://localhost:1313/**.
 ## Step 6: Customize the Theme
 Your new site already looks great, but you will want to tweak it a little before you release it to the public.
 
-### Site Configuration
+#### Site Configuration
 Open up **config.toml** in a text editor:
 
 ```
@@ -92,3 +92,12 @@ theme = "ananke"
 ```
 
 Replace the **title** above with something more personal. Also, if you already have a domain ready, set the **baseURL**. Note that this value is not needed when running the local development server.
+
+
+```bash
+require 'sinatra'
+
+get '/hi' do
+"Hello World!"
+end
+```

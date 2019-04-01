@@ -3,7 +3,7 @@
     "Getting Started": ["Quick-Start"],
     "Install Hugo": ["install"],
     "Theme": ["install-theme", "tlb-theme"],
-    "Content Management": ["content-overview", "collection", "how-to-add-entry"],
+    "Content Management": ["content-overview", "how-to-add-entry", "collection"],
     "Hosting & Deployment": ["hosting-netlify"]
   },
   "docs-other": {
